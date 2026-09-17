@@ -26,7 +26,31 @@ Responsive web design already includes adaptation. “Adaptive composition” na
 
 It also supports new designs. It supplies design reasoning and a working method; it does not require a particular framework, component library, or visual style.
 
-## Install in Codex
+## Install
+
+### With the skills CLI
+
+With Node.js and npm available, run this from the project where you want to use the skill:
+
+```zsh
+npx skills add ZaguanLabs/adaptive-composition --skill adaptive-composition
+```
+
+The CLI lets you choose your agent and installation scope. To install directly for Codex at user scope:
+
+```zsh
+npx skills add ZaguanLabs/adaptive-composition --skill adaptive-composition --agent codex --global
+```
+
+Update a CLI-managed installation with:
+
+```zsh
+npx skills update adaptive-composition
+```
+
+The [skills CLI documentation](https://skills.sh/docs/cli) explains installation and its default telemetry, which powers the public directory. Choose either the CLI or the Git checkout method below to manage an installation. Preserve any local customizations before installing over an existing copy.
+
+### With Git for Codex
 
 For a fresh user-level installation, clone this repository into your skills directory:
 
