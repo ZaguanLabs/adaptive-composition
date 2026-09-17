@@ -33,13 +33,13 @@ It also supports new designs. It supplies design reasoning and a working method;
 With Node.js and npm available, run this from the project where you want to use the skill:
 
 ```zsh
-npx skills add ZaguanLabs/adaptive-composition --skill adaptive-composition
+npx skills add zaguanlabs/adaptive-composition --skill adaptive-composition
 ```
 
 The CLI lets you choose your agent and installation scope. To install directly for Codex at user scope:
 
 ```zsh
-npx skills add ZaguanLabs/adaptive-composition --skill adaptive-composition --agent codex --global
+npx skills add zaguanlabs/adaptive-composition --skill adaptive-composition --agent codex --global
 ```
 
 Update a CLI-managed installation with:
@@ -56,7 +56,7 @@ For a fresh user-level installation, clone this repository into your skills dire
 
 ```zsh
 mkdir -p ~/.agents/skills
-git clone https://github.com/ZaguanLabs/adaptive-composition.git \
+git clone https://github.com/zaguanlabs/adaptive-composition.git \
   ~/.agents/skills/adaptive-composition
 ```
 
