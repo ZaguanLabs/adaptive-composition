@@ -1,6 +1,6 @@
 # Annotated source register
 
-Research checked on **2026-09-17**. This register records sources consulted through available web text, excerpts, catalog records, and selected sections. It does **not** claim that every book, report, archive, or linked reference was read in full. No historical artwork is bundled.
+Research checked on **2026-09-18**. This register records sources consulted through available web text, excerpts, catalog records, and selected sections. It does **not** claim that every book, report, archive, or linked reference was read in full. No historical artwork is bundled.
 
 **Evidence types:** original practitioner/research text; official institutional history or collection record; publisher description; current technical guidance. A museum record can establish an artifact's provenance without validating all interpretive claims in its label. A publisher page can establish date and subject without substantiating detailed claims about an unread book.
 
@@ -165,6 +165,36 @@ The historical atlas summarizes provenance. The principle cards, composition met
 ### S38 — George A. Miller, memory and information, 1956
 
 [The Magical Number Seven — reproduced with the author's permission](https://www.musanim.com/miller1956/). Original paper presented in a later transcription; an explicitly older precursor. Its discussion concerns information-processing tasks and chunking, not an experiment establishing seven-item navigation menus. Use the actual construct and task, not the memorable title, when reasoning about interface limits.
+
+## Dynamic systems and performance
+
+### S39 — Core Web Vitals
+
+[Web Vitals — web.dev](https://web.dev/articles/vitals) and [measurement guidance](https://web.dev/articles/vitals-measurement-getting-started). Current Google guidance defines the evolving Core Web Vitals set and recommends assessing its thresholds at the 75th percentile. Consulted for LCP, INP, CLS, and the distinction between field and lab measurement. These metrics do not cover every task, energy cost, native application, or terminal interface; verify the current set before encoding it in a long-lived budget.
+
+### S40 — Dynamic status messages
+
+[Understanding Status Messages — W3C WAI](https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html) and [WAI-ARIA 1.2](https://www.w3.org/TR/wai-aria-1.2/). Normative and informative W3C material distinguishes programmatically determinable status, alert, and log behavior and notes the risk of overly chatty live regions. Used to support careful batching and labeling of streaming status, not to prescribe one token-streaming implementation or claim assistive-technology compatibility without testing.
+
+### S41 — NIST Generative AI Profile, 2024
+
+[Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile, NIST AI 600-1](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf). Cross-sectoral risk-management profile. Consulted sections on confabulation, human oversight, source/citation verification, provenance, override, incident response, and recovery. It supports treating these as consequential system concerns; the interface state model and presentation guidance in this skill are synthesis, not NIST requirements or proof that a review screen makes a system safe.
+
+### S42 — Adaptive, wearable, and spatial platform layout
+
+[Layout — Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/layout) and [Gestures](https://developer.apple.com/design/human-interface-guidelines/gestures/). Current platform-owner guidance covers context changes, text size, safe areas, watch surfaces, spatial bounds, and alternative input considerations. Used as one concrete platform example. Its point values, materials, and device conventions are not universal requirements; consult the current guidance for the platform actually being implemented.
+
+### S43 — Voice and cross-device responses
+
+[Siri — Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/siri/). Current platform-owner guidance, revised in 2026, covers responses that can stand audibly and visually, contextual follow-up, errors, and device-independent wording when a request can affect another device. Used as a current voice-interface example, not as general evidence that every conversational system should follow Siri's product model.
+
+### S44 — Performance budgets
+
+[Performance Budgets 101 — web.dev](https://web.dev/articles/performance-budgets-101). Practitioner guidance defines a performance budget as limits on experience and resource measures that inform design and technology decisions. The article's example metrics and byte counts are dated examples, not defaults adopted by this skill. Current projects should choose measures from their task, baseline, supported conditions, and current tooling.
+
+### S45 — Web Sustainability Guidelines
+
+[Web Sustainability Guidelines — W3C Sustainable Web Interest Group](https://www.w3.org/TR/web-sustainability-guidelines/). Current W3C Group Draft Note addresses measurable resource, people, and environmental concerns and explicitly identifies its draft, non-endorsed status and incomplete implementation evidence. Used to support considering resource efficiency and careful claims. Following it does not establish energy, carbon, or sustainability outcomes without scoped measurement.
 
 ## Reading beyond this register
 

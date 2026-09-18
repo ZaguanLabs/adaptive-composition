@@ -10,10 +10,10 @@ Think of a canvas as a set of conditions, not a rectangle alone.
 |---|---|---|
 | Geometry | Usable width, height, aspect ratio, inset areas, panes, terminal rows/columns | Where simultaneous presentation stops working |
 | Perception | Text size, contrast, distance, lighting, zoom, visual or auditory access | Effective detail and readable hierarchy |
-| Input | Keyboard, mouse, touch, pen, assistive input; mixed use | Targets, focus, shortcuts, alternatives |
+| Input and output | Keyboard, mouse, touch, pen, voice, sound, haptics, assistive input; mixed use | Targets, focus, turn-taking, review, and alternatives |
 | Content | Longest plausible text, actual language, item counts, missing media, live updates | Reflow, truncation, pagination, stable identity |
-| Time and state | Loading, selection, editing, failure, stale data, interruption | Feedback and preservation across transitions |
-| Environment | Offline/slow links, terminal capabilities, embedded or split windows | Progressive rendering and graceful fallback |
+| Time, state, and agency | Loading, selection, editing, failure, stale data, interruption, approval, delegated or partial action | Feedback, accountability, and preservation across transitions |
+| Environment and resources | Offline/slow links, terminal capabilities, embedded or split windows, compute, memory, battery, thermal limits | Progressive rendering, budgets, and graceful fallback |
 
 Inspect relevant existing evidence; do not demand a comprehensive requirements workshop for a small change. Separate confirmed facts from assumed test cases.
 
@@ -40,6 +40,7 @@ These are local roles, not permanent rankings. Artwork may be central to album d
 | Substitute | An authorized alternate asset, representation, or control communicates the same thing | Inventing unsupported data or a symbol users cannot interpret |
 | Disclose | Supplementary detail has a clear, reachable access point | Hiding required warnings, comparisons, totals, or basic functionality |
 | Sequence | Simultaneous panes cannot fit but can form a coherent journey | Losing selection, drafts, filters, or return context between views |
+| Translate | The same meaning must move between visual, auditory, haptic, spatial, or textual presentation | Assuming every modality can carry the same detail or review path |
 | Summarize | A truthful summary helps overview and original detail remains available | Unlabeled aggregation or claiming a partial result is complete |
 | Omit | Material is truly incidental or its removal is explicitly in scope | Treating “less space” as permission to remove capabilities |
 
@@ -94,6 +95,8 @@ For any layout switch, specify:
 3. How drafts, filters, queue order, playback, progress, and scroll context survive.
 4. How a user returns to the previous context without repeating work.
 5. How overlay, navigation, and browser/platform history interact.
+
+For handoff, generated output, or agent actions, also preserve the action's semantic state: requested, proposed, awaiting approval, running, partially complete, completed, failed, or uncertain. Keep actor, target, scope, and material parameters attached to the action when they affect review or recovery. A layout or device transition must not become implicit approval.
 
 Prefer keeping the same functional element and state owner when possible. If different renderers are required, share semantic state, keep inactive controls out of navigation/accessibility exposure, and deliberately transfer context. Avoid duplicate submissions and remount-triggered operations.
 

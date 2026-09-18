@@ -30,6 +30,8 @@ In HTML, resolution variants selected through `srcset` address resource size; `<
 
 Give fallback behavior equal care: missing image, failed webfont, long title, no results, unknown status, and slow content. Reserve space where it prevents disruptive movement, but do not trap enlarged text in a fixed-height box.
 
+When asset weight, font loading, script work, or live updates can delay the task or destabilize the layout, set project-specific conditions and measures with [performance guidance](performance.md). Do not import example byte limits as universal requirements.
+
 ## Typography and writing systems
 
 Use text roles with room to grow; avoid a global scale that makes every label smaller in compact mode. Distinguish reading text from compact but legible metadata. Numeric values used for comparison benefit from alignment and clear units.
@@ -57,6 +59,8 @@ Choose a representation for the decision. Preserve table semantics and row/colum
 Before turning a table into cards, identify the comparisons lost. Alternatives include user-chosen columns, pinned identity columns, filtering, a dedicated compare mode, or a summary plus full table. Do not remove risk, units, freshness, or provenance to reduce visual clutter.
 
 Live updates should not steal focus, silently change the selected row's identity, or reshuffle targets under the pointer. Use stable object identifiers. Convey stale/disconnected state separately from a measured healthy result. Preserve meaningful status text if color is removed.
+
+For streaming generated content, approvals, or external actions, use the state and recovery model in [dynamic systems](dynamic-systems.md). Batch programmatic announcements around meaningful changes rather than exposing every token as a new status message.
 
 ## Native application transitions
 

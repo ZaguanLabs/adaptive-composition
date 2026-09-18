@@ -1,4 +1,4 @@
 interface:
   display_name: "Adaptive Composition"
-  short_description: "Historical design principles for web, GUI, and TUI"
-  default_prompt: "Use $adaptive-composition to design this interface across its intended formats, drawing on relevant historical principles and preserving essential tasks."
+  short_description: "Adaptive interface composition across formats and states"
+  default_prompt: "Use $adaptive-composition to design this interface across its intended conditions while preserving meaning, identity, agency, and continuity."

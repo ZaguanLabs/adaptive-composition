@@ -130,4 +130,14 @@ Dates describe original work where established; a source's upload date or modern
 
 This selection is strongest in European and North American published design/HCI, with selected Mexican and Japanese examples. It is not representative of every geography, language, craft tradition, community, or form of disability advocacy. For a culturally specific brief, research practitioners and sources from that context and the target writing system; do not merely apply this canon and add local motifs.
 
-Add precedents only when they change a decision. Record original context, evidence, transferable principle, counterexample, and a test. Distinguish research read in full from catalog descriptions, original sources from later interpretations, and observed effects from proposed applications. Do not equate a famous surviving artifact with a representative sample of historical practice.
+Treat this atlas as a fallback index, not the starting bibliography for culturally situated work. Begin with the product's actual languages, institutions, tools, vernacular forms, disability communities, and living practitioners. Seek accounts from creators and affected communities alongside institutional collections; notice who preserved, translated, credited, or omitted the work. A translated museum label and a contemporary practitioner's account establish different things.
+
+Add precedents only when they change a decision. Record:
+
+- creator or community, audience, place, language, date, and production conditions;
+- what the source directly establishes and whose account it represents;
+- the specific constraint and transferable relationship, not a detachable motif;
+- a counterexample or reason the transfer may fail now;
+- the present task check that will decide whether to keep the idea.
+
+Distinguish research read in full from catalog descriptions, original sources from later interpretations, and observed effects from proposed applications. Do not equate a famous surviving artifact with a representative sample of historical practice, and do not add one token example to imply global coverage.

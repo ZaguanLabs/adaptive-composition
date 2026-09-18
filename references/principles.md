@@ -8,6 +8,8 @@ These cards are the skill author's synthesis. Historical sources support their l
 
 Define the minimum recognizable cues and their relationships. A title's typographic role, characteristic image, and repeated naming may survive while every element changes position. In a text terminal, verbal identity and terminology may carry more than a logo.
 
+When there is no useful identity to preserve, use the [visual-language method](visual-language.md) to establish a product-specific position, signature relationship, and bounded grammar before deriving variants.
+
 **Do:** maintain a small vocabulary of roles and valid variants; allow content to determine composition.
 
 **Avoid:** treating a screenshot as the identity specification, or assuming a brand color alone supplies recognition.
@@ -110,6 +112,8 @@ Explain what can be done, what is selected, what is happening, and what happened
 
 **Check:** exercise loading, empty, edited, disabled, failure, interruption, retry, and cancellation states as applicable. Confirm success means actual completion.
 
+For generated output or delegated action, distinguish requested, proposed, awaiting approval, running, partially complete, completed, failed, and uncertain states as applicable. Read [dynamic systems](dynamic-systems.md) rather than treating a conversational transcript as the whole interaction.
+
 ## 10. Efficiency includes effort and recovery
 
 **Lineage:** pointing research, command systems, human factors [S10, S12, S19, S20].
@@ -121,6 +125,8 @@ Judge effort in the relevant mode: pointer travel, keyboard steps, visual search
 **Avoid:** applying a pointing-time model to reading comprehension, inventing universal timing thresholds, or hiding all controls behind gestures.
 
 **Check:** repeat a frequent task with supported inputs; examine mistakes and recovery as well as successful traversal.
+
+Include delayed input, slow delivery, and sustained resource use where they change effort. Use [performance guidance](performance.md) for task-specific budgets; a fast animation or small source diff is not evidence of a responsive workflow.
 
 ## 11. Inclusion is a design input
 

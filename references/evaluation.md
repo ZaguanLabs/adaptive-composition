@@ -53,7 +53,10 @@ After implementation, repeat the same task with comparable content, environment,
 | Comparison | Can users compare the relevant evidence? | Cards or pagination force unnecessary memorization |
 | Operation | Do focus, keys, targets, and labels work together? | Visual order conflicts with action order |
 | Continuity | Does a composition change preserve ongoing work? | Lost draft, reset filter, restarted media, retargeted selection |
+| Agency | Is it clear who or what will act, on which target, with which scope and approval? | Draft appears sent; retry duplicates an external action; handoff changes actor |
+| Provenance and uncertainty | Is decision-relevant evidence, freshness, and uncertainty attached to the claim or result? | Global disclaimer; fabricated confidence; stale source presented as current |
 | Adaptation | Does the design work between chosen endpoints? | Breakage just around a threshold or in short viewports |
+| Performance | Does the task become usable and remain responsive within stated conditions and budgets? | Identity asset blocks the task; live updates shift controls; unbounded background work |
 | Inclusion | Are supported alternative perception and input paths usable? | Color-only state, hover-only commands, clipped enlarged text |
 | Truthfulness | Do state and reports reflect actual behavior? | Mock success, untested claims of accessibility or usability |
 
@@ -62,6 +65,10 @@ After implementation, repeat the same task with comparable content, environment,
 For a substantial web/GUI adaptation, inspect constrained and spacious cases, an intermediate width, a short viewport, relevant text enlargement, long/localized content, keyboard operation, and relevant loading/error/empty states. Exercise resizing while work is in progress. Add assistive-technology and user testing when warranted and available.
 
 For a TUI, inspect the declared minimum and a larger size, resize during input, long/wide/combining text, supported terminal capabilities, color-disabled state, keyboard mode boundaries, and ordinary exit/interrupt cleanup. A screenshot cannot establish these behaviors.
+
+For streaming, conversational, agentic, or multi-device work, inspect partial output, interruption, stale context, changed targets, approval boundaries, partial completion, retry, handoff conflict, and recovery. Test the supported nonvisual or transient modality independently; a visual transcript does not prove an auditory flow works.
+
+Where performance can alter the composition, record the task, device/network or runtime condition, cache state, representative content, and selected measure. Compare equivalent states and report lab and field evidence separately. A smaller payload does not by itself prove a faster or more useful task.
 
 Do not run an exhaustive product audit for a local spacing fix. Conversely, two static screenshots are insufficient evidence for a new stateful adaptation.
 
@@ -128,6 +135,57 @@ Evaluate whether the response bounds each claim to its evidence, avoids claiming
 “Review these notes from a digital exhibition: at an unspecified intermediate window size, the opening artwork fills most of the view and the first essay section requires scrolling. The brief calls for an immersive introduction followed by reading. The table of contents is visible. Separately, at a 900 × 400 CSS-pixel viewport and 100% zoom, a fixed audio player covers the essay's next-section link, including when it receives keyboard focus. No screenshot was saved. Recommend what to change and what to verify.”
 
 Evaluate whether the response distinguishes intentional pacing from an observed obstruction, retains the known conditions, and identifies missing measurements without inventing them. It should offer a targeted remedy and acceptance check for the covered link without imposing an above-the-fold rule on the whole exhibition. It must not claim physical-touch testing or improved reader engagement from these notes.
+
+### J. Identity from a weak brief
+
+“Design a responsive public archive for independent radio recordings. No visual identity exists. The service should feel meticulous but alive, and it must not resemble a generic podcast app. Create a visual direction for a spacious browser, a narrow browser, and a text-only fallback. Do not invent cultural references or artwork.”
+
+Review whether the result grounds its design position in the archive's content, establishes a signature relationship and bounded grammar, and explains how recognition migrates. A palette, font pair, gradient, and card grid without a characteristic compositional idea fail. Check that operational controls remain dependable and that cultural or licensing gaps are explicit.
+
+### K. Streaming agent action
+
+“Design an assistant that drafts a supplier payment, asks for approval, submits it through an external tool, and streams status updates. The connection can fail after one of three invoices succeeds. Users may change the supplier before approval and may retry after reconnecting.”
+
+Review whether requested, proposed, approved, running, partial, failed, and complete states remain distinct. Check actor, target, amount, approval invalidation after edits, idempotent or explicitly risky retry, per-invoice results, provenance, and recovery. A conversational transcript with a spinner is insufficient.
+
+### L. Performance changes the composition
+
+“Adapt an image-led field guide for low-memory phones and intermittent networks without erasing its visual identity. Existing field data shows slow primary-image delivery and delayed taps; no byte budget has been agreed. Propose what to measure and which design decisions should depend on the result.”
+
+Review whether the response sets project-specific conditions and budgets instead of inventing universal byte limits. It should define useful content for this task, preserve one or more identity cues on degraded paths, distinguish lab from field evidence, and address fonts, images, interaction work, stability, caching/failure, and later regressions without claiming measured improvement.
+
+## Release-testing this skill
+
+The prompts above are fixtures, not evidence of quality. Before describing the skill as empirically validated, run a versioned evaluation and publish the results, including failures.
+
+### Comparison design
+
+- Run each applicable prompt with the same model, settings, tools, and raw task both **without the skill** and **with the candidate skill**. Keep the intended answer and rubric hidden from the producing run.
+- Randomize presentation order for review and, where possible, blind reviewers to condition. Use independent review or adjudication for disputed outcomes.
+- Add at least two realistic held-out tasks that were not used to write the candidate revision. Repeatedly tuning to the public fixtures alone measures fixture fit.
+- Cross-model runs are useful for portability, but do not mix model changes with skill changes in one comparison. Record model and host versions precisely enough to interpret drift.
+- Use an isolated workspace and non-production services. Do not perform real purchases, deployments, messages, or destructive actions for an interface evaluation.
+
+### Outcome rubric
+
+Rate each applicable dimension **pass**, **partial**, **fail**, or **not applicable**, with a short piece of output evidence:
+
+1. Required meaning, tasks, and capabilities survive.
+2. Recognition or a newly requested identity survives across conditions.
+3. Proposed composition is concrete enough to implement or review.
+4. Continuity, agency, and recovery are correct for the state model.
+5. Medium-specific constraints and accessibility are handled without invented testing.
+6. Performance/resource reasoning is proportional and measurable when relevant.
+7. Evidence, historical claims, and product assumptions are calibrated.
+8. Scope and reference use remain proportional to the request.
+
+A run has a **critical failure** if it removes an explicit required capability, loses or falsely commits work, hides a consequential action behind ambiguous approval, invents observed evidence, or takes an unauthorized external action. Report critical failures separately; do not average them into a reassuring score.
+
+### Results record
+
+For each run record: skill commit/version, fixture or held-out task ID, date, host, model and settings, tools available, condition (baseline/candidate), output artifact, rubric judgments, critical failures, reviewer, and notes. When the host exposes them, also record input/output tokens, wall time, and monetary cost. Missing telemetry should remain “unavailable,” not estimated.
+
+Summarize pass/partial/fail counts per dimension and the number of critical failures for baseline and candidate. Report the small sample size and disagreements. A higher pass count on these tasks supports a bounded release decision; it is not a general usability study or proof that the method works for people.
 
 ## Maintenance
 
